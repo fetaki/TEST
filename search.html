@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Поиск</title>
+
+	<link rel="icon" href="/favicon.ico">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/vendor.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<div class="header">
+	<div class="container">
+		<div class="flex acenter">
+			<a href="#" class="header__logo">
+				<img src="assets/img/logo.svg" alt="">
+			</a>
+			<div class="header__main">
+				<div class="header__top flex acenter jbetween">
+					<div class="header__city">Санкт-Петербург</div>
+					<div class="header__contacts flex acenter">
+						<a href="#"><span class="icon icon-telegram"></span></a>
+						<a href="#"><span class="icon icon-whatsapp"></span></a>
+						<a href="#" class="_hide"><span class="icon icon-header-phone"></span></a>
+						<a href="tel:88121234567">8 (812) 123 45 67</a>
+					</div>
+					<a href="#" class="header__callback">Обратный звонок</a>
+					<a href="#" class="header-login flex acenter">
+						<span class="header-login__icon">
+							<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.3542 8.25274C10.6835 7.58206 9.88522 7.08556 9.01422 6.785C9.94709 6.14249 10.56 5.06719 10.56 3.85129C10.56 1.8883 8.96293 0.29126 6.99994 0.29126C5.03694 0.29126 3.4399 1.8883 3.4399 3.85129C3.4399 5.06719 4.05278 6.14249 4.98568 6.785C4.11467 7.08556 3.31636 7.58206 2.64565 8.25274C1.48258 9.41584 0.842041 10.9622 0.842041 12.607H1.80421C1.80421 9.74211 4.135 7.41133 6.99994 7.41133C9.86487 7.41133 12.1957 9.74211 12.1957 12.607H13.1578C13.1578 10.9622 12.5173 9.41584 11.3542 8.25274ZM6.99994 6.44915C5.56748 6.44915 4.40207 5.28377 4.40207 3.85129C4.40207 2.41881 5.56748 1.25343 6.99994 1.25343C8.43239 1.25343 9.5978 2.41881 9.5978 3.85129C9.5978 5.28377 8.43239 6.44915 6.99994 6.44915Z" fill="white"/>
+							</svg>
+						</span>
+						<span class="header-login__text">Войти | Оптовые заказы</span>
+					</a>
+				</div>
+				<div class="header__bottom flex acenter jbetween">
+					<div class="header-mmenu">
+						<div class="header-mmenu__icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="header-mmenu__text">Меню</div>
+					</div>
+					<ul class="header__menu">
+						<li>
+							<a href="#">Каталог</a>
+							<div class="menu__children">
+								<ul>
+									<li><a href="#">Кофе</a></li>
+									<li class="menu-tea"><a href="#">Чай</a></li>
+									<li class="menu-choco"><a href="#">Шоколад</a></li>
+									<li class="menu-fruits"><a href="#">Фрукты мерч</a></li>
+									<li class="menu-accessories"><a href="#">Аксессуары</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">Система скидок</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>	
+					<div class="header__actions flex acenter">
+						<div class="_hide">
+							<span>
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.391 2.35797C13.8703 0.837308 11.8484 -8.50512e-05 9.69799 6.47913e-09C9.3456 6.47913e-09 9.06006 0.285624 9.06006 0.637933C9.06006 0.990242 9.34568 1.27587 9.69799 1.27587C11.5077 1.27578 13.2091 1.98048 14.4888 3.26018C15.7686 4.53987 16.4733 6.24137 16.4732 8.05114C16.4732 8.40345 16.7587 8.68907 17.1111 8.68907C17.4634 8.68907 17.749 8.40345 17.749 8.05122C17.7491 5.90054 16.9117 3.87863 15.391 2.35797Z" fill="white"/>
+									<path d="M12.7668 8.05122C12.7668 8.40353 13.0524 8.68915 13.4048 8.68906C13.7571 8.68906 14.0426 8.40344 	14.0426 8.05113C14.0425 5.65591 12.0935 3.70698 9.69808 3.70664C9.69799 3.70664 9.69808 3.70664 9.69799 3.70664C9.34568 3.70664 9.06014 3.99218 9.06006 4.34449C9.06006 4.6968 9.3456 4.98242 9.69791 4.98251C11.39 4.98276 12.7666 6.35933 12.7668 8.05122Z" fill="white"/>
+									<path d="M11.3552 11.3038C10.3828 11.2535 9.88741 11.9766 9.64984 12.324C9.45089 12.6148 9.5254 13.0118 9.81621 13.2107C10.107 13.4097 10.504 13.3352 10.7029 13.0443C10.9836 12.6339 11.1108 12.5694 11.2833 12.5775C11.8354 12.6424 14.0099 14.2359 14.2276 14.7342C14.2823 14.8809 14.2802 15.0247 14.2216 15.1997C13.9933 15.8773 13.6154 16.3534 13.1285 16.5766C12.666 16.7887 12.0989 16.7694 11.489 16.5212C9.21137 15.5929 7.22153 14.2974 5.57481 12.6706C5.57413 12.6699 5.57345 12.6693 5.57285 12.6686C3.94944 11.0235 2.65631 9.03626 1.72952 6.76216C1.48124 6.1517 1.46202 5.58454 1.67406 5.12208C1.89726 4.63521 2.37341 4.2573 3.05038 4.02926C3.22594 3.9704 3.36952 3.96852 3.51488 4.02262C4.01494 4.24113 5.60832 6.41555 5.67263 6.96145C5.68181 7.14041 5.61674 7.26749 5.20668 7.54767C4.91578 7.74636 4.84102 8.14332 5.0398 8.43422C5.23849 8.72512 5.63537 8.7998 5.92636 8.6011C6.2739 8.36379 6.99689 7.86978 6.94671 6.89408C6.89142 5.87492 4.90889 3.17596 3.96161 2.82765C3.54032 2.67063 3.09716 2.66791 2.64398 2.81999C1.62431 3.16337 0.887876 3.77561 0.514302 4.59047C0.151956 5.38099 0.163439 6.29817 0.5479 7.24333C1.53976 9.677 2.92747 11.8064 4.67243 13.5726C4.67669 13.577 4.68102 13.5812 4.68545 13.5854C6.4504 15.3271 8.57735 16.7123 11.0078 17.703C11.4945 17.9009 11.9738 18 12.4322 18C12.8637 18 13.277 17.9122 13.6602 17.7365C14.4752 17.363 15.0873 16.6266 15.431 15.6063C15.5827 15.1539 15.5802 14.711 15.4244 14.2916C15.0749 13.3418 12.3759 11.3593 11.3552 11.3038Z" fill="white"/>
+								</svg>
+							</span>
+						</div>
+						<div class="_hide">
+							<span>
+								<svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.99976 0C3.17506 0 0.0635376 3.11194 0.0635376 6.93705C0.0635376 9.67027 1.20783 12.435 3.37271 14.9324C4.98966 16.7978 6.5921 17.8546 6.65959 17.8987C6.76289 17.9663 6.88137 18 6.99984 18C7.11823 18 7.23671 17.9663 7.3401 17.8987C7.4075 17.8546 9.01019 16.7978 10.6271 14.9325C12.7922 12.435 13.9366 9.67027 13.9366 6.93705C13.9365 3.11194 10.8246 0 6.99976 0ZM6.99976 16.6147C5.72406 15.6641 1.30715 12.0055 1.30715 6.93705C1.30715 3.79767 3.86079 1.24362 6.99976 1.24362C10.139 1.24362 12.6929 3.79767 12.6929 6.93705C12.6929 12.0055 8.27554 15.6641 6.99976 16.6147Z" fill="white"/>
+									<path d="M7.00016 4.18261C5.48212 4.18261 4.24713 5.41768 4.24713 6.93588C4.24713 8.45367 5.48212 9.6885 7.00016 9.6885C8.5182 9.6885 9.75311 8.45367 9.75311 6.93588C9.75311 5.41776 8.51812 4.18261 7.00016 4.18261ZM7.00016 8.44488C6.16785 8.44488 5.49075 7.76794 5.49075 6.93588C5.49075 6.10341 6.16785 5.42622 7.00016 5.42622C7.83239 5.42622 8.5095 6.10341 8.5095 6.93588C8.5095 7.76794 7.83239 8.44488 7.00016 8.44488Z" fill="white"/>
+								</svg>
+							</span>
+						</div>
+						<div class="_hide">
+							<span>
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.3981 10.3968C12.6022 9.60086 11.6548 9.01165 10.6212 8.65497C11.7282 7.89248 12.4555 6.61641 12.4555 5.17348C12.4555 2.84395 10.5603 0.948719 8.23079 0.948719C5.90126 0.948719 4.00603 2.84395 4.00603 5.17348C4.00603 6.61641 4.73334 7.89248 5.84043 8.65497C4.80679 9.01165 3.85942 9.60086 3.06348 10.3968C1.68324 11.777 0.923096 13.6122 0.923096 15.5641H2.06492C2.06492 12.1642 4.83091 9.39824 8.23079 9.39824C11.6307 9.39824 14.3967 12.1642 14.3967 15.5641H15.5385C15.5385 13.6122 14.7783 11.777 13.3981 10.3968ZM8.23079 8.25641C6.53086 8.25641 5.14786 6.87343 5.14786 5.17348C5.14786 3.47353 6.53086 2.09055 8.23079 2.09055C9.93071 2.09055 11.3137 3.47353 11.3137 5.17348C11.3137 6.87343 9.93071 8.25641 8.23079 8.25641Z" fill="white"/>
+								</svg>
+							</span>
+						</div>
+						<div class="header__search">
+							<span>
+								<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M7.84813 0.894775C4.01415 0.894775 0.894775 4.01415 0.894775 7.84813C0.894775 11.6823 4.01415 14.8015 7.84813 14.8015C11.6823 14.8015 14.8015 11.6823 14.8015 7.84813C14.8015 4.01415 11.6823 0.894775 7.84813 0.894775ZM7.84813 13.5178C4.7219 13.5178 2.17847 10.9744 2.17847 7.84816C2.17847 4.72193 4.7219 2.17847 7.84813 2.17847C10.9743 2.17847 13.5178 4.7219 13.5178 7.84813C13.5178 10.9743 10.9743 13.5178 7.84813 13.5178Z" fill="white"/><path d="M16.4962 15.5885L12.8162 11.9085C12.5655 11.6578 12.1594 11.6578 11.9086 11.9085C11.6579 12.1591 11.6579 12.5656 11.9086 12.8161L15.5886 16.4961C15.714 16.6214 15.8781 16.6841 16.0424 16.6841C16.2065 16.6841 16.3708 16.6214 16.4962 16.4961C16.7469 16.2455 16.7469 15.839 16.4962 15.5885Z" fill="white"/></g><defs><clipPath id="clip0"><rect width="15.7895" height="15.7895" fill="white" transform="translate(0.894775 0.894775)"/></clipPath></defs></svg>
+							</span>
+						</div>
+						<div>
+							<span>
+								<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.1869 1.65885C16.3289 0.821061 15.1436 0.402344 13.6302 0.402344C13.2114 0.402344 12.784 0.474957 12.3484 0.620114C11.9126 0.765377 11.5072 0.961356 11.1327 1.20791C10.7576 1.45439 10.4353 1.68586 10.1649 1.90196C9.89478 2.11814 9.63801 2.34787 9.39487 2.59098C9.15161 2.34787 8.89491 2.11814 8.62479 1.90196C8.3545 1.68586 8.03203 1.45453 7.65703 1.20791C7.28211 0.961249 6.87677 0.765412 6.44109 0.620114C6.00545 0.474993 5.5781 0.402344 5.15932 0.402344C3.6461 0.402344 2.46065 0.821168 1.60277 1.65885C0.744892 2.49646 0.315918 3.65828 0.315918 5.14442C0.315918 5.59703 0.395417 6.0633 0.554095 6.54267C0.712773 7.02229 0.893598 7.43104 1.09621 7.76873C1.29879 8.10639 1.52852 8.43567 1.78523 8.75657C2.04193 9.07744 2.22953 9.29859 2.34761 9.42018C2.46579 9.54177 2.55871 9.62968 2.62625 9.68377L8.949 15.7837C9.07062 15.9053 9.21922 15.9663 9.39483 15.9663C9.57044 15.9663 9.71914 15.9053 9.8407 15.7837L16.1534 9.70382C17.7004 8.15714 18.4738 6.63722 18.4738 5.14427C18.4738 3.65804 18.0449 2.49632 17.1869 1.65885ZM15.2718 8.7515L9.39487 14.4157L3.50787 8.74128C2.24462 7.47835 1.6131 6.27916 1.6131 5.14427C1.6131 4.59719 1.68571 4.11412 1.83087 3.69541C1.97613 3.27662 2.16189 2.94382 2.38818 2.69727C2.6145 2.45065 2.88973 2.24984 3.21397 2.09436C3.53839 1.93901 3.85585 1.83428 4.16654 1.78027C4.47722 1.72632 4.80817 1.69931 5.15949 1.69931C5.51071 1.69931 5.88907 1.78534 6.29437 1.95765C6.6996 2.12988 7.07282 2.34606 7.41392 2.60609C7.75509 2.86631 8.04725 3.10946 8.29054 3.33567C8.53369 3.5621 8.73627 3.76969 8.89842 3.95885C9.01994 4.10752 9.18558 4.18184 9.3949 4.18184C9.60429 4.18184 9.76975 4.10752 9.89141 3.95885C10.0535 3.76969 10.2563 3.562 10.4994 3.33567C10.7426 3.10946 11.0348 2.86642 11.3758 2.60609C11.717 2.34606 12.0902 2.12988 12.4956 1.95765C12.9008 1.78538 13.2793 1.69931 13.6305 1.69931C13.9818 1.69931 14.3126 1.72632 14.6234 1.78027C14.9342 1.83425 15.2517 1.93901 15.576 2.09436C15.9003 2.24981 16.1755 2.45075 16.4018 2.69727C16.6281 2.94382 16.8139 3.27662 16.9591 3.69541C17.1042 4.11412 17.1768 4.59719 17.1768 5.14427C17.1767 6.27916 16.5418 7.48168 15.2718 8.7515Z" fill="white"/>
+								</svg>
+							</span>
+						</div>
+						<div>
+							<span>
+								<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.1923 5.37499C18.9421 5.0611 18.5668 4.88103 18.1625 4.88103H14.5135L12.5348 0.350197C12.4121 0.0692802 12.0849 -0.0590956 11.804 0.0636552C11.523 0.186332 11.3947 0.513581 11.5174 0.794535L13.302 4.88106H6.69796L8.48259 0.794535C8.60527 0.513581 8.477 0.186369 8.19605 0.0636552C7.91514 -0.0590956 7.58789 0.0692062 7.46521 0.350197L5.48652 4.88106H1.83754C1.43321 4.88106 1.05786 5.0611 0.807655 5.37503C0.562044 5.68322 0.471415 6.07941 0.559009 6.46213L2.50765 14.9736C2.64373 15.568 3.16948 15.983 3.78619 15.983H16.2138C16.8305 15.983 17.3563 15.568 17.4924 14.9736L19.441 6.46209C19.5286 6.07937 19.438 5.68318 19.1923 5.37499ZM16.2138 14.8728H3.78619C3.69193 14.8728 3.60937 14.811 3.58987 14.7258L1.64122 6.21437C1.62594 6.14758 1.65159 6.09732 1.67586 6.06694C1.69836 6.03867 1.74932 5.99126 1.83754 5.99126H5.0017L4.8563 6.32421C4.73362 6.60516 4.86189 6.93237 5.14284 7.05509C5.21515 7.08669 5.2905 7.10164 5.36469 7.10164C5.57867 7.10164 5.78257 6.97719 5.87368 6.76858L6.21314 5.99133H13.7869L14.1264 6.76858C14.2175 6.97723 14.4214 7.10164 14.6354 7.10164C14.7095 7.10164 14.7849 7.08669 14.8572 7.05509C15.1382 6.93241 15.2665 6.60516 15.1438 6.32421L14.9984 5.99126H18.1625C18.2508 5.99126 18.3017 6.03867 18.3242 6.06694C18.3485 6.09736 18.3741 6.14761 18.3589 6.21434L16.4102 14.7259C16.3907 14.811 16.3081 14.8728 16.2138 14.8728Z" fill="white"/>
+									<path d="M6.66936 8.39673C6.36279 8.39673 6.11426 8.64526 6.11426 8.95183V13.0226C6.11426 13.3291 6.36279 13.5777 6.66936 13.5777C6.97592 13.5777 7.22446 13.3291 7.22446 13.0226V8.95183C7.22446 8.64526 6.97596 8.39673 6.66936 8.39673Z" fill="white"/>
+									<path d="M10.0002 8.39673C9.6936 8.39673 9.44507 8.64526 9.44507 8.95183V13.0226C9.44507 13.3291 9.6936 13.5777 10.0002 13.5777C10.3067 13.5777 10.5553 13.3291 10.5553 13.0226V8.95183C10.5553 8.64526 10.3067 8.39673 10.0002 8.39673Z" fill="white"/>
+									<path d="M13.3307 8.39673C13.0242 8.39673 12.7756 8.64526 12.7756 8.95183V13.0226C12.7756 13.3291 13.0242 13.5777 13.3307 13.5777C13.6373 13.5777 13.8858 13.3291 13.8858 13.0226V8.95183C13.8858 8.64526 13.6373 8.39673 13.3307 8.39673Z" fill="white"/>
+								</svg>
+							</span>
+							<p>12587 ₽</p>
+						</div>
+						<div class="search">
+							<div class="search__block">
+								<div class="st-title">Поиск</div>
+								<form class="search-form flex acenter">
+									<i class="icon icon-search"></i>
+									<div class="search-form__row">
+										<input type="text" name="s" placeholder="Введите запрос">
+										<button></button>
+									</div>
+								</form>
+								<div class="search-results">
+									<div class="search-results__title">Быстрые результаты</div>
+									<div class="search-results__list">
+										<a href="#" class="search-results-item">
+											<div class="search-results-item__title">Бразилия серра ду кабраль</div>
+											<div class="search-results-item__info">
+												<div class="search-results-item__weight">за 200 г</div>
+												<div class="search-results-item__price">1455 ₽</div>
+											</div>
+										</a>
+										<a href="#" class="search-results-item">
+											<div class="search-results-item__title">Бразилия серра ду кабраль</div>
+											<div class="search-results-item__info">
+												<div class="search-results-item__weight">за 200 г</div>
+												<div class="search-results-item__price">1455 ₽</div>
+											</div>
+										</a>
+										<a href="#" class="search-results-item">
+											<div class="search-results-item__title">Бразилия серра ду кабраль</div>
+											<div class="search-results-item__info">
+												<div class="search-results-item__weight">за 200 г</div>
+												<div class="search-results-item__price">1455 ₽</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="search-results__more text-center">
+									<a href="#">Смотреть все</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="searchpage _in">
+	<div class="container">
+		<h1 class="st-title">Поиск по запросу: вкусный кофе</h1>
+		<form method="get" class="searchpage__form">
+			<input type="text" name="s" placeholder="Вкусный кофе">
+		</form>
+		<div class="catalog-filter flex acenter jbetween">
+			<div class="catalog-filter__left flex acenter">
+				<div class="catalog-filter__sort flex acenter">
+					<p>Сортировка:</p>
+					<a href="#">По возрастанию цены</a>
+				</div>
+				<div class="catalog-filter__filter">
+					<p>Фильтр</p>
+					<span>0</span>
+				</div>
+				<a href="#" class="catalog-filter__reset">Сбросить фильтр</a>
+			</div>
+			<div class="catalog-filter__pagination pagination flex acenter">
+				<p>Страница</p>
+				<ul>
+					<li><a href="#" class="active">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+				</ul>
+			</div>
+
+			<div class="catalog-filter-list">
+				<div class="flex">
+					<div class="catalog-filter-list__left">
+						<div class="catalog-filter-checkbox flex acenter">
+							<p>Обжарка:</p>
+							<div class="catalog-filter-checkbox__list">
+								<div class="catalog-filter-checkbox__item">
+									<input type="checkbox" name="obj">
+									<label>Фильтр <span></span></label>
+								</div>
+								<div class="catalog-filter-checkbox__item">
+									<input type="checkbox" name="obj">
+									<label>Эспрессо <span></span></label>
+								</div>
+								<div class="catalog-filter-checkbox__item">
+									<input type="checkbox" name="obj">
+									<label>Под молочко <span></span></label>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-filter-checkbox flex acenter">
+							<p>Кислотность:</p>
+							<div class="catalog-filter-checkbox__list flex acenter">
+								<div class="catalog-filter-checkbox__item">
+									<input type="checkbox" name="obj">
+									<label>Низкая <span></span></label>
+								</div>
+								<div class="catalog-filter-checkbox__item">
+									<input type="checkbox" name="obj">
+									<label>Средняя <span></span></label>
+								</div>
+								<div class="catalog-filter-checkbox__item">
+									<input type="checkbox" name="obj">
+									<label>Высокая <span></span></label>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-filter-checkbox flex acenter">
+							<p>Плотность:</p>
+							<div class="catalog-filter-checkbox__list flex acenter">
+								<div class="catalog-filter-checkbox__item">
+									<input type="checkbox" name="obj">
+									<label>Низкая</label>
+								</div>
+								<div class="catalog-filter-checkbox__item">
+									<input type="checkbox" name="obj">
+									<label>Средняя</label>
+								</div>
+								<div class="catalog-filter-checkbox__item">
+									<input type="checkbox" name="obj">
+									<label>Высокая</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-filter-list__right">
+						<div class="catalog-filter-checkbox flex acenter">
+							<p>Способ обработки:</p>
+							<div class="select">
+								<div class="select__result">Выбрать</div>
+								<div class="select__list _scroll">
+									<div class="select__scroll">
+										<div class="select__item">Бразилия</div>
+										<div class="select__item">Колумбия</div>
+										<div class="select__item">Эфиопия</div>
+										<div class="select__item">Аргентина</div>
+										<div class="select__item">Россия</div>
+										<div class="select__item">Китай</div>
+										<div class="select__item">Италия</div>
+										<div class="select__item">Бразилия</div>
+										<div class="select__item">Колумбия</div>
+										<div class="select__item">Эфиопия</div>
+										<div class="select__item">Аргентина</div>
+										<div class="select__item">Россия</div>
+										<div class="select__item">Китай</div>
+										<div class="select__item">Италия</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-filter-checkbox flex acenter">
+							<p>Страна:</p>
+							<div class="select">
+								<div class="select__result">Выбрать</div>
+								<div class="select__list _scroll">
+									<div class="select__scroll">
+										<div class="select__item">Бразилия</div>
+										<div class="select__item">Колумбия</div>
+										<div class="select__item">Эфиопия</div>
+										<div class="select__item">Аргентина</div>
+										<div class="select__item">Россия</div>
+										<div class="select__item">Китай</div>
+										<div class="select__item">Италия</div>
+										<div class="select__item">Бразилия</div>
+										<div class="select__item">Колумбия</div>
+										<div class="select__item">Эфиопия</div>
+										<div class="select__item">Аргентина</div>
+										<div class="select__item">Россия</div>
+										<div class="select__item">Китай</div>
+										<div class="select__item">Италия</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="cards__row">
+			<div class="cards__col">
+				<div class="cards-item">
+					<div class="cards-item__head">
+						<div class="cards-item-stats">
+							<div class="cards-item-stats__item">
+								<i class="icon icon-star"></i>
+								<p>4.5</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-review"></i>
+								<p>Отзывы</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-favourite"></i>
+							</div>
+						</div>
+						<div class="cards-item__in">В наличии</div>
+					</div>
+					<div class="cards-item__title">
+						Бразилия серра ду кабраль
+					</div>
+					<div class="cards-item__image">
+						<img src="assets/img/cards/card-image.png" alt="">
+					</div>
+					<div class="cards-item__desc">
+						Плотный кофе с нотами абрикоса, амаретто и тёмного шоколада
+					</div>
+
+					<div class="cards-item-filter card-filter">
+						<div class="card-filter-item">
+							<p>Помол</p>
+							<div class="card-filter-item__select select">
+								<div class="select__result">Не молоть</div>
+								<div class="select__list">
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-filter-item">
+							<p>Обжарка</p>
+							<div class="card-filter-item__select card-checkbox">
+								<a href="#" class="_active">Фильтр</a>
+								<a href="#">Эспрессо</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item-info _yellow">
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Кислотность</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Сладость</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Горечь</p>
+						</div>
+					</div>
+
+					<div class="cards-item-buttons">
+						<div class="select cards-item-buttons__select">
+							<div class="select__result">
+								<span>1000г</span>
+								1455 ₽
+							</div>
+						</div>
+						<a href="#" class="cards-item-buttons__cart add-to-cart">В корзину</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="cards__col">
+				<div class="cards-item">
+					<div class="cards-item__head">
+						<div class="cards-item-stats">
+							<div class="cards-item-stats__item">
+								<i class="icon icon-star"></i>
+								<p>4.5</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-review"></i>
+								<p>Отзывы</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-favourite"></i>
+							</div>
+						</div>
+						<div class="cards-item__in">В наличии</div>
+					</div>
+					<div class="cards-item__title">
+						Бразилия серра ду кабраль
+					</div>
+					<div class="cards-item__image">
+						<img src="assets/img/cards/card-image.png" alt="">
+					</div>
+					<div class="cards-item__desc">
+						Плотный кофе с нотами абрикоса, амаретто и тёмного шоколада
+					</div>
+
+					<div class="cards-item-filter card-filter">
+						<div class="card-filter-item">
+							<p>Помол</p>
+							<div class="card-filter-item__select select">
+								<div class="select__result">Не молоть</div>
+								<div class="select__list">
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-filter-item">
+							<p>Обжарка</p>
+							<div class="card-filter-item__select card-checkbox">
+								<a href="#" class="_active">Фильтр</a>
+								<a href="#">Эспрессо</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item-info _yellow">
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Кислотность</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Сладость</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Горечь</p>
+						</div>
+					</div>
+
+					<div class="cards-item-buttons">
+						<div class="select cards-item-buttons__select">
+							<div class="select__result">
+								<span>1000г</span>
+								1455 ₽
+							</div>
+						</div>
+						<a href="#" class="cards-item-buttons__cart add-to-cart">В корзину</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="cards__col">
+				<div class="cards-item">
+					<div class="cards-item__head">
+						<div class="cards-item-stats">
+							<div class="cards-item-stats__item">
+								<i class="icon icon-star"></i>
+								<p>4.5</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-review"></i>
+								<p>Отзывы</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-favourite"></i>
+							</div>
+						</div>
+						<div class="cards-item__in">В наличии</div>
+					</div>
+					<div class="cards-item__title">
+						Бразилия серра ду кабраль
+					</div>
+					<div class="cards-item__image">
+						<img src="assets/img/cards/card-image.png" alt="">
+					</div>
+					<div class="cards-item__desc">
+						Плотный кофе с нотами абрикоса, амаретто и тёмного шоколада
+					</div>
+
+					<div class="cards-item-filter card-filter">
+						<div class="card-filter-item">
+							<p>Помол</p>
+							<div class="card-filter-item__select select">
+								<div class="select__result">Не молоть</div>
+								<div class="select__list">
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-filter-item">
+							<p>Обжарка</p>
+							<div class="card-filter-item__select card-checkbox">
+								<a href="#" class="_active">Фильтр</a>
+								<a href="#">Эспрессо</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item-info _yellow">
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Кислотность</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Сладость</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Горечь</p>
+						</div>
+					</div>
+
+					<div class="cards-item-buttons">
+						<div class="select cards-item-buttons__select">
+							<div class="select__result">
+								<span>1000г</span>
+								1455 ₽
+							</div>
+						</div>
+						<a href="#" class="cards-item-buttons__cart add-to-cart">В корзину</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="cards__col">
+				<div class="cards-item">
+					<div class="cards-item__head">
+						<div class="cards-item-stats">
+							<div class="cards-item-stats__item">
+								<i class="icon icon-star"></i>
+								<p>4.5</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-review"></i>
+								<p>Отзывы</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-favourite"></i>
+							</div>
+						</div>
+						<div class="cards-item__in">В наличии</div>
+					</div>
+					<div class="cards-item__title">
+						Бразилия серра ду кабраль
+					</div>
+					<div class="cards-item__image">
+						<img src="assets/img/cards/card-image.png" alt="">
+					</div>
+					<div class="cards-item__desc">
+						Плотный кофе с нотами абрикоса, амаретто и тёмного шоколада
+					</div>
+
+					<div class="cards-item-filter card-filter">
+						<div class="card-filter-item">
+							<p>Помол</p>
+							<div class="card-filter-item__select select">
+								<div class="select__result">Не молоть</div>
+								<div class="select__list">
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-filter-item">
+							<p>Обжарка</p>
+							<div class="card-filter-item__select card-checkbox">
+								<a href="#" class="_active">Фильтр</a>
+								<a href="#">Эспрессо</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item-info _yellow">
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Кислотность</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Сладость</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Горечь</p>
+						</div>
+					</div>
+
+					<div class="cards-item-buttons">
+						<div class="select cards-item-buttons__select">
+							<div class="select__result">
+								<span>1000г</span>
+								1455 ₽
+							</div>
+						</div>
+						<a href="#" class="cards-item-buttons__cart add-to-cart">В корзину</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="cards__col">
+				<div class="cards-item">
+					<div class="cards-item__head">
+						<div class="cards-item-stats">
+							<div class="cards-item-stats__item">
+								<i class="icon icon-star"></i>
+								<p>4.5</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-review"></i>
+								<p>Отзывы</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-favourite"></i>
+							</div>
+						</div>
+						<div class="cards-item__in">В наличии</div>
+					</div>
+					<div class="cards-item__title">
+						Бразилия серра ду кабраль
+					</div>
+					<div class="cards-item__image">
+						<img src="assets/img/cards/card-image.png" alt="">
+					</div>
+					<div class="cards-item__desc">
+						Плотный кофе с нотами абрикоса, амаретто и тёмного шоколада
+					</div>
+
+					<div class="cards-item-filter card-filter">
+						<div class="card-filter-item">
+							<p>Помол</p>
+							<div class="card-filter-item__select select">
+								<div class="select__result">Не молоть</div>
+								<div class="select__list">
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-filter-item">
+							<p>Обжарка</p>
+							<div class="card-filter-item__select card-checkbox">
+								<a href="#" class="_active">Фильтр</a>
+								<a href="#">Эспрессо</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item-info _yellow">
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Кислотность</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Сладость</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Горечь</p>
+						</div>
+					</div>
+
+					<div class="cards-item-buttons">
+						<div class="select cards-item-buttons__select">
+							<div class="select__result">
+								<span>1000г</span>
+								1455 ₽
+							</div>
+						</div>
+						<a href="#" class="cards-item-buttons__cart add-to-cart">В корзину</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="cards__col">
+				<div class="cards-item">
+					<div class="cards-item__head">
+						<div class="cards-item-stats">
+							<div class="cards-item-stats__item">
+								<i class="icon icon-star"></i>
+								<p>4.5</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-review"></i>
+								<p>Отзывы</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-favourite"></i>
+							</div>
+						</div>
+						<div class="cards-item__in">В наличии</div>
+					</div>
+					<div class="cards-item__title">
+						Бразилия серра ду кабраль
+					</div>
+					<div class="cards-item__image">
+						<img src="assets/img/cards/card-image.png" alt="">
+					</div>
+					<div class="cards-item__desc">
+						Плотный кофе с нотами абрикоса, амаретто и тёмного шоколада
+					</div>
+
+					<div class="cards-item-filter card-filter">
+						<div class="card-filter-item">
+							<p>Помол</p>
+							<div class="card-filter-item__select select">
+								<div class="select__result">Не молоть</div>
+								<div class="select__list">
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-filter-item">
+							<p>Обжарка</p>
+							<div class="card-filter-item__select card-checkbox">
+								<a href="#" class="_active">Фильтр</a>
+								<a href="#">Эспрессо</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item-info _yellow">
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Кислотность</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Сладость</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Горечь</p>
+						</div>
+					</div>
+
+					<div class="cards-item-buttons">
+						<div class="select cards-item-buttons__select">
+							<div class="select__result">
+								<span>1000г</span>
+								1455 ₽
+							</div>
+						</div>
+						<a href="#" class="cards-item-buttons__cart add-to-cart">В корзину</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="cards__col">
+				<div class="cards-item">
+					<div class="cards-item__head">
+						<div class="cards-item-stats">
+							<div class="cards-item-stats__item">
+								<i class="icon icon-star"></i>
+								<p>4.5</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-review"></i>
+								<p>Отзывы</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-favourite"></i>
+							</div>
+						</div>
+						<div class="cards-item__in">В наличии</div>
+					</div>
+					<div class="cards-item__title">
+						Бразилия серра ду кабраль
+					</div>
+					<div class="cards-item__image">
+						<img src="assets/img/cards/card-image.png" alt="">
+					</div>
+					<div class="cards-item__desc">
+						Плотный кофе с нотами абрикоса, амаретто и тёмного шоколада
+					</div>
+
+					<div class="cards-item-filter card-filter">
+						<div class="card-filter-item">
+							<p>Помол</p>
+							<div class="card-filter-item__select select">
+								<div class="select__result">Не молоть</div>
+								<div class="select__list">
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-filter-item">
+							<p>Обжарка</p>
+							<div class="card-filter-item__select card-checkbox">
+								<a href="#" class="_active">Фильтр</a>
+								<a href="#">Эспрессо</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item-info _yellow">
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Кислотность</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Сладость</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Горечь</p>
+						</div>
+					</div>
+
+					<div class="cards-item-buttons">
+						<div class="select cards-item-buttons__select">
+							<div class="select__result">
+								<span>1000г</span>
+								1455 ₽
+							</div>
+						</div>
+						<a href="#" class="cards-item-buttons__cart add-to-cart">В корзину</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="cards__col">
+				<div class="cards-item">
+					<div class="cards-item__head">
+						<div class="cards-item-stats">
+							<div class="cards-item-stats__item">
+								<i class="icon icon-star"></i>
+								<p>4.5</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-review"></i>
+								<p>Отзывы</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-favourite"></i>
+							</div>
+						</div>
+						<div class="cards-item__in">В наличии</div>
+					</div>
+					<div class="cards-item__title">
+						Бразилия серра ду кабраль
+					</div>
+					<div class="cards-item__image">
+						<img src="assets/img/cards/card-image.png" alt="">
+					</div>
+					<div class="cards-item__desc">
+						Плотный кофе с нотами абрикоса, амаретто и тёмного шоколада
+					</div>
+
+					<div class="cards-item-filter card-filter">
+						<div class="card-filter-item">
+							<p>Помол</p>
+							<div class="card-filter-item__select select">
+								<div class="select__result">Не молоть</div>
+								<div class="select__list">
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-filter-item">
+							<p>Обжарка</p>
+							<div class="card-filter-item__select card-checkbox">
+								<a href="#" class="_active">Фильтр</a>
+								<a href="#">Эспрессо</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item-info _yellow">
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Кислотность</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Сладость</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Горечь</p>
+						</div>
+					</div>
+
+					<div class="cards-item-buttons">
+						<div class="select cards-item-buttons__select">
+							<div class="select__result">
+								<span>1000г</span>
+								1455 ₽
+							</div>
+						</div>
+						<a href="#" class="cards-item-buttons__cart add-to-cart">В корзину</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="cards__col">
+				<div class="cards-item">
+					<div class="cards-item__head">
+						<div class="cards-item-stats">
+							<div class="cards-item-stats__item">
+								<i class="icon icon-star"></i>
+								<p>4.5</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-review"></i>
+								<p>Отзывы</p>
+							</div>
+							<div class="cards-item-stats__item">
+								<i class="icon icon-favourite"></i>
+							</div>
+						</div>
+						<div class="cards-item__in">В наличии</div>
+					</div>
+					<div class="cards-item__title">
+						Бразилия серра ду кабраль
+					</div>
+					<div class="cards-item__image">
+						<img src="assets/img/cards/card-image.png" alt="">
+					</div>
+					<div class="cards-item__desc">
+						Плотный кофе с нотами абрикоса, амаретто и тёмного шоколада
+					</div>
+
+					<div class="cards-item-filter card-filter">
+						<div class="card-filter-item">
+							<p>Помол</p>
+							<div class="card-filter-item__select select">
+								<div class="select__result">Не молоть</div>
+								<div class="select__list">
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+									<div class="select__item">Не молоть</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-filter-item">
+							<p>Обжарка</p>
+							<div class="card-filter-item__select card-checkbox">
+								<a href="#" class="_active">Фильтр</a>
+								<a href="#">Эспрессо</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item-info _yellow">
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Кислотность</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Сладость</p>
+						</div>
+						<div class="cards-item-info__item">
+							<div class="_line"><span style="width: 50%;"></span></div>
+							<p>Горечь</p>
+						</div>
+					</div>
+
+					<div class="cards-item-buttons">
+						<div class="select cards-item-buttons__select">
+							<div class="select__result">
+								<span>1000г</span>
+								1455 ₽
+							</div>
+						</div>
+						<a href="#" class="cards-item-buttons__cart add-to-cart">В корзину</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="catalog-bottom">
+			<a href="#" class="catalog-bottom__more"><span>Показать еще 9 пачек великолепного кофе</span> (следующая страница)</a>
+			<div class="catalog-filter__pagination pagination flex acenter">
+				<p>Страница</p>
+				<ul>
+					<li><a href="#" class="active">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="container flex acenter jbetween">
+		<div class="footer__left">
+			<a href="#" class="footer__logo">
+				<img src="assets/img/logo.svg" alt="">
+			</a>
+			<div class="footer__links">
+				<a href="#">Политика<br> конфиденциальности</a>
+				<a href="#">Что-то не работает?</a>
+			</div>
+		</div>
+		<div class="footer__middle flex">
+			<div class="footer__menu">
+				<p>Компания</p>
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu">
+				<p>Каталог</p>
+				<ul>
+					<li><a href="#">Кофе каталог</a></li>
+					<li><a href="#">Новинки, акции и топ кофейных продаж</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__right">
+			<div class="footer-contacts">
+				<div class="footer-contacts__phone">
+					<a href="#"><span class="icon icon-telegram"></span></a>
+					<a href="#"><span class="icon icon-whatsapp"></span></a>
+					<a href="tel:89991234567">8 (999) 123 45 67</a>
+				</div>
+				<a href="mailto:shop@redcrab.coffee" class="footer-contacts__email">shop@redcrab.coffee</a>
+			</div>
+			<div class="footer__delivery">
+				Доставка в любую<br> точку России.
+			</div>
+			<div class="footer__socials flex acenter">
+				<a href="#">
+					<svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.556 18.2413L12.0267 25.6867C12.784 25.6867 13.112 25.3613 13.5053 24.9707L17.056 21.5773L24.4133 26.9653C25.7627 27.7173 26.7133 27.3213 27.0773 25.724L31.9067 3.09468L31.908 3.09334C32.336 1.09868 31.1867 0.318678 29.872 0.808012L1.48533 11.676C-0.452007 12.428 -0.422674 13.508 1.15599 13.9973L8.41333 16.2547L25.2707 5.70668C26.064 5.18134 26.7853 5.47201 26.192 5.99734L12.556 18.2413Z" fill="white"/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg width="17" height="32" viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.3288 5.31333H16.2501V0.225333C15.7461 0.156 14.0128 0 11.9941 0C7.78211 0 4.89678 2.64933 4.89678 7.51867V12H0.248779V17.688H4.89678V32H10.5954V17.6893H15.0554L15.7634 12.0013H10.5941V8.08267C10.5954 6.43867 11.0381 5.31333 13.3288 5.31333Z" fill="white"/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M26.5533 11.3706C26.036 10.7173 26.184 10.4266 26.5533 9.84263C26.56 9.83596 30.8307 3.93463 31.2707 1.93329L31.2733 1.93196C31.492 1.20263 31.2733 0.666626 30.216 0.666626H26.7173C25.8267 0.666626 25.416 1.12663 25.196 1.64129C25.196 1.64129 23.4147 5.90529 20.8947 8.66929C20.0813 9.46796 19.7053 9.72396 19.2613 9.72396C19.0427 9.72396 18.7027 9.46796 18.7027 8.73863V1.93196C18.7027 1.05729 18.4533 0.666626 17.716 0.666626H12.2147C11.656 0.666626 11.324 1.07463 11.324 1.45463C11.324 2.28396 12.584 2.47463 12.7147 4.80796V9.87063C12.7147 10.98 12.5133 11.184 12.0667 11.184C10.8773 11.184 7.99067 6.90263 6.28 2.00263C5.93467 1.05196 5.59733 0.667959 4.7 0.667959H1.2C0.201333 0.667959 0 1.12796 0 1.64263C0 2.55196 1.18933 7.07329 5.53067 13.0466C8.424 17.124 12.4987 19.3333 16.2053 19.3333C18.4333 19.3333 18.7053 18.8426 18.7053 17.9986C18.7053 14.1026 18.504 13.7346 19.62 13.7346C20.1373 13.7346 21.028 13.9906 23.108 15.9573C25.4853 18.2893 25.876 19.3333 27.2067 19.3333H30.7053C31.7027 19.3333 32.208 18.8426 31.9173 17.8746C31.252 15.8386 26.756 11.6506 26.5533 11.3706Z" fill="white"/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.99961 2.17735C-0.515052 4.78935 -0.000385359 7.56402 -0.000385359 15.9934C-0.000385359 22.9934 	-1.22172 30.0107 5.17028 31.6627C7.16628 32.176 24.8516 32.176 26.8449 31.66C29.5063 30.9734 31.6716 28.8147 31.9676 25.0507C32.0089 24.5254 32.0089 7.47069 31.9663 6.93469C31.6516 2.92535 29.1836 0.614688 25.9316 0.146688C25.1863 0.0386878 25.0369 0.00668784 21.2129 2.11708e-05C7.64895 0.00668784 4.67561 -0.597312 1.99961 2.17735Z" fill="white"/>
+						<path d="M15.9972 4.18535C11.1559 4.18535 6.55858 3.75469 4.80258 8.26135C4.07725 10.1227 4.18258 12.54 4.18258 16.0014C4.18258 19.0387 4.08525 21.8934 4.80258 23.74C6.55458 28.2494 11.1892 27.8174 15.9946 27.8174C20.6306 27.8174 25.4106 28.3 27.1879 23.74C27.9146 21.86 27.8079 19.4787 27.8079 16.0014C27.8079 11.3854 28.0626 8.40535 25.8239 6.16802C23.5572 3.90135 20.4919 4.18535 15.9919 4.18535H15.9972ZM14.9386 6.31469C25.0372 6.29869 26.3226 5.17602 25.6132 20.772C25.3612 26.288 21.1612 25.6827 15.9986 25.6827C6.58525 25.6827 6.31458 25.4134 6.31458 15.996C6.31458 6.46935 7.06125 6.32002 14.9386 6.31202V6.31469ZM22.3039 8.27602C21.5212 8.27602 20.8866 8.91069 20.8866 9.69335C20.8866 10.476 21.5212 11.1107 22.3039 11.1107C23.0866 11.1107 23.7212 10.476 23.7212 9.69335C23.7212 8.91069 23.0866 8.27602 22.3039 8.27602ZM15.9972 9.93335C12.6466 9.93335 9.93058 12.6507 9.93058 16.0014C9.93058 19.352 12.6466 22.068 15.9972 22.068C19.3479 22.068 22.0626 19.352 22.0626 16.0014C22.0626 12.6507 19.3479 9.93335 15.9972 9.93335ZM15.9972 12.0627C21.2039 12.0627 21.2106 19.94 15.9972 19.94C10.7919 19.94 10.7839 12.0627 15.9972 12.0627Z" fill="#222021"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="copyright">
+	<div class="container">
+		© 2021 «Red Crab Coffee Roasters»
+	</div>
+</div>
+
+<script src="assets/js/vendor.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
